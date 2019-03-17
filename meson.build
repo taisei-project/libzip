@@ -23,7 +23,7 @@ if get_option('default_library') == 'static'
     config.set('ZIP_STATIC', true)
 endif
 
-dep_zlib = dependency('zlib', version : '>=1.1.2', required : true)
+dep_zlib = dependency('zlib', version : '>=1.1.2', required : true, fallback : ['zlib', 'zlib_dep'])
 
 libzip_deps = [dep_zlib]
 libzip_cflags = []
