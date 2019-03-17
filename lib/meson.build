@@ -177,6 +177,7 @@ libzip = library('zip',
     gnu_symbol_visibility : 'hidden',
     soversion : '5',
     version : '5.0',
+    override_options : ['c_std=none'],
 )
 
 if should_install
