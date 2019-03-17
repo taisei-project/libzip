@@ -1,0 +1,59 @@
+option(
+    'bzip2',
+    type : 'feature',
+    description : 'Enable support for BZip2 compression'
+)
+
+option(
+    'lzma',
+    type : 'feature',
+    description : 'Enable support for LZMA compression'
+)
+
+option(
+    'zstd',
+    type : 'feature',
+    description : 'Enable support for Zstandard compression'
+)
+
+option(
+    'enable_crypto',
+    type : 'combo',
+    choices : ['auto', 'true', 'false'],
+    description : 'Enable support for encrypted archives'
+)
+
+option(
+    'enable_commoncrypto',
+    type : 'combo',
+    choices : ['auto', 'true', 'false'],
+    description : 'Enable use of CommonCrypto for encryption'
+)
+
+option(
+    'enable_gnutls',
+    type : 'combo',
+    choices : ['auto', 'true', 'false'],
+    description : 'Enable use of GnuTLS for encryption'
+)
+
+option(
+    'enable_mbedtls',
+    type : 'combo',
+    choices : ['auto', 'true', 'false'],
+    description : 'Enable use of mbed TLS for encryption'
+)
+
+option(
+    'enable_openssl',
+    type : 'combo',
+    choices : ['auto', 'true', 'false'],
+    description : 'Enable use of OpenSSL for encryption'
+)
+
+option(
+    'enable_windows_crypto',
+    type : 'combo',
+    choices : ['auto', 'true', 'false'],
+    description : 'Enable use of Windows cryptography libraries for encryption'
+)

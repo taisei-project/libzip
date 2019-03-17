@@ -46,8 +46,8 @@
 #cmakedefine HAVE_STRINGS_H
 #cmakedefine HAVE_UNISTD_H
 #cmakedefine HAVE_WINDOWS_CRYPTO
-#cmakedefine SIZEOF_OFF_T ${SIZEOF_OFF_T}
-#cmakedefine SIZEOF_SIZE_T ${SIZEOF_SIZE_T}
+#define SIZEOF_OFF_T ${SIZEOF_OFF_T}
+#define SIZEOF_SIZE_T ${SIZEOF_SIZE_T}
 #cmakedefine HAVE_DIRENT_H
 #cmakedefine HAVE_FTS_H
 #cmakedefine HAVE_NDIR_H
@@ -56,7 +56,7 @@
 #cmakedefine WORDS_BIGENDIAN
 #cmakedefine HAVE_SHARED
 /* END DEFINES */
-#define PACKAGE "@CMAKE_PROJECT_NAME@"
-#define VERSION "@CMAKE_PROJECT_VERSION@"
+#define PACKAGE "${PACKAGE}"
+#define VERSION "${VERSION}"
 
 #endif /* HAD_CONFIG_H */
