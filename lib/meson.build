@@ -54,6 +54,7 @@ libzip_sources = files(
     'zip_io_util.c',
     'zip_libzip_version.c',
     'zip_memdup.c',
+    'zip_mkstempm.c',
     'zip_name_locate.c',
     'zip_new.c',
     'zip_open.c',
@@ -114,12 +115,14 @@ if host_machine.system() == 'windows'
         'zip_source_win32handle.c',
         'zip_source_win32utf8.c',
         'zip_source_win32w.c',
+        'zip_random_win32.c',
     )
 
     # TODO: handle UWP
 else
     libzip_opsys_sources = files(
         'zip_source_file.c',
+        'zip_random_unix.c',
     )
 endif
 
