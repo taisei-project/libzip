@@ -113,11 +113,11 @@ libzip_sources = files(
 
 if host_machine.system() == 'windows'
     libzip_opsys_sources = files(
-        'zip_source_win32.c',
-        'zip_source_win32_ansi.c',
-        'zip_source_win32_named.c',
-        'zip_source_win32_utf16.c',
-        'zip_source_win32_utf8.c',
+        'zip_source_file_win32.c',
+        'zip_source_file_win32_ansi.c',
+        'zip_source_file_win32_named.c',
+        'zip_source_file_win32_utf16.c',
+        'zip_source_file_win32_utf8.c',
         'zip_random_win32.c',
     )
 
